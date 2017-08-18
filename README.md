@@ -1,5 +1,5 @@
 # ClassC
-A very simple OOP wrapper in plain C using structs and function pointers.
+A very simple OOP wrapper in plain C using structs and function pointers. For demonstration purposes, a 2D vector implementation is included.
 
 Example of usage:
 

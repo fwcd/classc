@@ -15,4 +15,7 @@ other->y = 1;
 test->add(test, other);
 
 test->printThis(test);
+
+deleteVector(test);
+deleteVector(other);
 ```

@@ -13,6 +13,7 @@ int main() {
 	test->printThis(test);
 
 	deleteVector(test);
+	deleteVector(other);
 
 	return 0;
 }

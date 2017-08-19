@@ -52,3 +52,7 @@ constructor(newVector) {
 
 	return this;
 }
+
+destructor(deleteVector) {
+	cleanup;
+}

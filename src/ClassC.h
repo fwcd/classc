@@ -19,14 +19,17 @@ typedef struct CLASS_NAME* OBJ_NAME;
 
 #define class struct CLASS_NAME
 
-#define declMethod(returnType, name, ...) returnType (*name)(void* this, ## __VA_ARGS__ )
+#define declSuper(superObjName) superObjName super
+#define declMethod(returnType, name, ...) returnType (*name)(OBJ_NAME this, ## __VA_ARGS__ )
 
 #define implMethod(returnType, name, ...) returnType name(OBJ_NAME this, ## __VA_ARGS__ )
 
-#define constructor(name) OBJ_NAME name()
+#define constructor(name, ...) OBJ_NAME name( ## __VA_ARGS__ )
+#define destructor(name, ...) void name(OBJ_NAME this, ## __VA_ARGS__ )
+#define cleanup free(this)
 
 #define linkThis OBJ_NAME this = (OBJ_NAME) malloc(sizeof(struct CLASS_NAME))
-
+#define linkSuper(superInstance) this->super = &superInstance
 #define linkMethod(name) this->name = &name
 
 

@@ -10,8 +10,9 @@ int main() {
 	other->y = 1;
 
 	test->add(test, other);
-
 	test->printThis(test);
+
+	deleteVector(test);
 
 	return 0;
 }

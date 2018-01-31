@@ -1,6 +1,8 @@
 # ClassC
 A very basic OOP wrapper for plain C using structs and function pointers. For demonstration purposes, a 2D vector implementation is included.
 
+Please note that this project only serves as a learning exercise and is thus not suited for production usage.
+
 Example of usage:
 
 ```C
